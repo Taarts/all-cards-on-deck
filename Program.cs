@@ -73,11 +73,17 @@ namespace allCardsOnDeck
                 deck[rightIndex] = leftCard;
                 deck[leftIndex] = rightCard;
             }
+                var firstCard = deck[0];
+            Console.WriteLine(firstCard);
 
-            foreach (var card in deck)
-            {
-                Console.WriteLine(card);
-            }
+            var secondCard = deck[1];
+            Console.WriteLine(secondCard);    
+
+
+            // foreach (var card in deck)
+            // {
+            //     Console.WriteLine(card);
+            // }
             //     //hint: understand the algorithm before you try to implement it.
 
 
