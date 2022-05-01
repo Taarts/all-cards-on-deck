@@ -55,7 +55,7 @@ namespace allCardsOnDeck
             //     // numberOfCards = length of our deck
             var numberOfCards = deck.Count; /*<---works*/
 
-            //     // // for rightIndex from numberOfCards - 1 down to 1 do:
+             //   // for rightIndex from numberOfCards - 1 down to 1 do:
             for (var rightIndex = numberOfCards - 1; rightIndex >= 1; rightIndex--)
             {
                 //  // leftIndex = random integer that is greater than or equal to 0 and LESS than rightIndex. 
