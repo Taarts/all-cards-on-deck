@@ -55,7 +55,7 @@ namespace allCardsOnDeck
             //     // numberOfCards = length of our deck
             var numberOfCards = deck.Count; /*<---works*/
 
-             //   // for rightIndex from numberOfCards - 1 down to 1 do:
+            //   // for rightIndex from numberOfCards - 1 down to 1 do:
             for (var rightIndex = numberOfCards - 1; rightIndex >= 1; rightIndex--)
             {
                 //  // leftIndex = random integer that is greater than or equal to 0 and LESS than rightIndex. 
@@ -73,11 +73,14 @@ namespace allCardsOnDeck
                 deck[rightIndex] = leftCard;
                 deck[leftIndex] = rightCard;
             }
-                var firstCard = deck[0];
-            Console.WriteLine(firstCard);
+            var firstCard = deck[0];
+            // Console.WriteLine(firstCard);
 
             var secondCard = deck[1];
-            Console.WriteLine(secondCard);    
+            // Console.WriteLine(secondCard);
+
+            var playerHand = (firstCard, secondCard);
+            Console.WriteLine($"This is your hand {playerHand}.");
 
 
             // foreach (var card in deck)
